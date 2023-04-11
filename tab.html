@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+.tabs {
+    position: relative;
+    margin: 100px 0;
+    height: 14.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tab-switch {
+    display: none;
+}
+.tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+}
+.tab-content {
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    width: 100%;
+    border-top: 3px solid #bdc3c7;
+    opacity: 0;
+    transition: all 0.35s;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.tab-switch:checked+.tab-label {
+    color: #5454D4;
+    border-bottom: 0;
+    transition: all 0.35s;
+    z-index: 1;
+}
+.tab-switch:checked+label+.tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+}
+
+.box {
+    width: 250px;
+    margin-top: 8px;
+}
+
+    </style>
+</head>
+<body>
+    <section class="best4">
+        <div class="container">
+            <div class="tabs">
+                <!-- 4tab block -->
+                <div class="tab">
+                    <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                    <label for="tab-1" class="tab-label">Tab One</label>
+                    <div class="tab-content">
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" >
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#ebc422" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#ebc422" />
+                            </svg>
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#ebc422" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#ebc422" />
+                            </svg>
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#F04037" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#F04037" />
+                            </svg>
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4tab block -->
+                <div class="tab">
+                    <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                    <label for="tab-2" class="tab-label">Tab Two</label>
+                    <div class="tab-content">
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#F04037" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#F04037" />
+                            </svg>
+
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#5454D4" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#5454D4" />
+                            </svg>
+
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#5454D4" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#5454D4" />
+                            </svg>
+
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4tab block -->
+                <div class="tab">
+                    <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+                    <label for="tab-3" class="tab-label">Tab 4</label>
+                    <div class="tab-content">
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#F04037" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#F04037" />
+                            </svg>
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#F04037" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#F04037" />
+                            </svg>
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#5454D4" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#5454D4" />
+                            </svg>
+
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4tab block -->
+                <div class="tab">
+                    <input type="radio" name="css-tabs" id="tab-4" class="tab-switch">
+                    <label for="tab-4" class="tab-label">Tab Three</label>
+                    <div class="tab-content">
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#5454D4" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#5454D4" />
+                            </svg>
+
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#ebc422" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#ebc422" />
+                            </svg>
+
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                        <div class="box">
+                            <svg width="50" height="50" viewBox="0 0 69 69" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z"
+                                    fill="#ebc422" fill-opacity="0.1" />
+                                <rect x="20" y="21" width="28" height="28" rx="4" fill="#ebc422" />
+                            </svg>
+
+                            <div class="font-24">Fully Responsive</div>
+                            <div class="p">With lots of unique blocks, you can easily build a page without coding.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
